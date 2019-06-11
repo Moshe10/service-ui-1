@@ -375,7 +375,7 @@
                     let check = checksIfAllFieldsAreFilled();
                     if (check) {
                         var data = null;
-                        let desc = this.state.comment1 + '%0A how to reproduce : ' + this.state.comment2 + '%0A expected result: ' + this.state.comment3 + '%0A actually result: ' + this.state.comment4;
+                        let desc = 'Description : ' +  this.state.comment1 + '%0A how to reproduce : ' + this.state.comment2 + '%0A expected result: ' + this.state.comment3 + '%0A actually result: ' + this.state.comment4;
                         let trelloUrl = "https://api.trello.com/1/cards?name=" + this.state.cardTitle + "&desc= " + desc + "&idList=" + this.currentIdList + "&key=" +
                             this.trelloInfo.key + '&token=' + this.trelloInfo.token;
     
